@@ -1,4 +1,5 @@
 /* index.css */
+html body * {text-transform: uppercase;}
 .bg1{
     width: 100%; height: 30px; 
     background: #000; text-align: center; 
@@ -14,11 +15,12 @@
 }
 .bg1 a p img{width: 100%;}
 
-header {
+header{
     position: relative;
     display: flex;
     justify-content: space-between;
     width: 100%; height: 50px;
+    background: #fff;
 }
 /* 메뉴 =========================================================== 완쪽메뉴 */
 header .left_menu{
@@ -40,48 +42,104 @@ header .left_menu .search a img{}
 header .left_menu .search input[type=text]{width: 100%; border-bottom: 1px solid #D9D9D9;}
 /* 메뉴 =========================================================== 중앙 메뉴 */
 header .center_menu{margin: 0 auto;}
-header .center_menu nav{
-    align-content: center;
-
-}
-header .center_menu nav .gnb{
-    display: flex;
-}
-header .center_menu nav .gnb>li{
-    margin: 0 15px;
-}
+header .center_menu nav{align-content: center;}
+header .center_menu nav .gnb{display: flex;}
+header .center_menu nav .gnb>li{margin: 0 15px;}
 header .center_menu nav .gnb>li:nth-child(2){margin-right: 90px;}
 header .center_menu nav .gnb>li>a{
     font-size: 0.75rem;
-    text-transform: uppercase;
     line-height: 50px;
     padding: 0 10px;
     display: block;
+    transition: color 0.5s;
 }
+header .center_menu nav .gnb>li>a:hover{/* color: #CBA064; */}
 /* =============================서브메뉴 */
 header .center_menu nav .gnb>li .lnb_bg{
-    position: absolute; top:50px; left: 0;
-    background-color: green;
+    position: absolute; top:-100vh; left: 0;
+    transition: top 1.5s;
+    z-index: -1;
     width: 100%;
+    padding: 40px 260px;
+    background: #fff;
+    border-bottom: 3px solid #000; 
 }
-header .center_menu nav .gnb li .lnb_bg .allmenu{}
-header .center_menu nav .gnb li .lnb_bg .allmenu a{}
-header .center_menu nav .gnb li .lnb_bg .allmenu a img{}
-header .center_menu nav .gnb li .lnb_bg .category{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1 li{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1 li a{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1 li .lnb_depth2{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1 li .lnb_depth2 li{}
-header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1 li .lnb_depth2 li a{}
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg{}/* 메뉴 속 광고 */
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{}
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p{}
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img{}
+header .center_menu nav .gnb>li .lnb_bg .allmenu{
+    padding: 10px 40px;
+    display: flex; flex-flow: row wrap;
+    margin-bottom: 15px;
+}
+header .center_menu nav .gnb>li .lnb_bg .allmenu a{
+    display: block; align-content: center;
+    font-size: 0.875rem; font-weight: 500;
+    margin-right: 15px;
+}
+header .center_menu nav .gnb>li .lnb_bg .allmenu a img{
+    width: 100%;
+    transform:rotate(0deg);
+    transition: transform 0.3s;
+}
+header .center_menu nav .gnb>li .lnb_bg .allmenu:hover a img{
+    transform:rotate(90deg);
+}
+header .center_menu nav .gnb li .lnb_bg .category{
+    display: flex; flex-flow: row wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1{
+    display: flex; flex-flow: row wrap;
+    padding: 0 10px;
+}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li{
+   width: 205px; margin-right: 40px;
+}
+header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a{
+    display: flex; justify-content: space-between; 
+    padding: 20px 10px; border-bottom: 1px solid #D9D9D9;
+}
+header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p{
+    font-size: 0.875rem; font-weight: 500; 
+    align-content: center;
+}
+header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p:nth-child(2){width: 20px; height: 20px;}
+header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p img{width: 100%;}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2{
+    padding: 30px 10px;
+    font-size: 0.813rem;
+}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li{
+    margin-bottom: 30px;
+}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li a{
+    display: block; font-weight: 500;
+    transition: color 0.4s;
+}
+header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li a:hover{
+    color: #CBA064;
+}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg{display: flex;}/* 메뉴 속 광고 */
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{margin-right: 20px;}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p{
+    margin-bottom: 20px;font-size: 0.875rem;
+    overflow: hidden;
+    color: #555;
+    transition: color 0.4s;
+}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a:hover p{
+    color: #000;
+}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img{
+    transform: scale(1);
+    transition: transform 0.8s;
+}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a:hover p img{
+    transform: scale(1.1);
+}
 header .center_menu>a{
     position: absolute;
     top: 10px; left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
 }
 header .center_menu>a h1{}
 header .center_menu>a h1 img{}
