@@ -65,7 +65,7 @@ header .center_menu nav .gnb>li .lnb_bg{
     border-bottom: 3px solid #000; 
 }
 header .center_menu nav .gnb>li .lnb_bg .allmenu{
-    padding: 10px 40px;
+    padding: 10px 20px;
     display: flex; flex-flow: row wrap;
     margin-bottom: 15px;
 }
