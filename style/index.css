@@ -41,7 +41,6 @@ header .left_menu .search input[type=text]{width: 100%; border-bottom: 1px solid
 /* 메뉴 =========================================================== 중앙 메뉴 */
 header .center_menu{margin: 0 auto;}
 header .center_menu nav{
-    height: 100%;
     align-content: center;
 
 }
@@ -49,11 +48,16 @@ header .center_menu nav .gnb{
     display: flex;
 }
 header .center_menu nav .gnb>li{
-    margin: 0 25px;
-    
+    margin: 0 15px;
 }
-header .center_menu nav .gnb>li:nth-child(2){margin-right: 130px;}
-header .center_menu nav .gnb>li a{text-transform: uppercase;}
+header .center_menu nav .gnb>li:nth-child(2){margin-right: 90px;}
+header .center_menu nav .gnb>li>a{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0 10px;
+    display: block;
+}
 /* =============================서브메뉴 */
 header .center_menu nav .gnb>li .lnb_bg{
     position: absolute; top:50px; left: 0;
