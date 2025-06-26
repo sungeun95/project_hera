@@ -1,5 +1,5 @@
 /* index.css */
-html body * {text-transform: uppercase;}
+html body * {text-transform: uppercase; text-align: center;}
 .bg1{
     width: 100%; height: 30px; 
     background: #000; text-align: center; 
@@ -28,10 +28,19 @@ header .left_menu{
     position: absolute;
     left: 20px; top: 10px;    
 }
+header .left_menu .hamburger{
+    display: none;
+}
+header .left_menu .hamburger samp { /* 햄버거메뉴 */
+    display: block;
+    width: 20px; height: 2px; background-color: black;
+    margin-bottom: 5px;
+}
 header .left_menu>a{
     align-content: center;
 }
-header .left_menu a img{}
+header .left_menu>a
+header .left_menu a img{width: 100%;}
 header .left_menu .search{
     width: 181px; height: 30px;
     padding: 5px 20px ;
@@ -41,6 +50,7 @@ header .left_menu .search a{margin-right: 5px; align-content: center;}
 header .left_menu .search a img{}
 header .left_menu .search input[type=text]{width: 100%; border-bottom: 1px solid #D9D9D9;}
 /* 메뉴 =========================================================== 중앙 메뉴 */
+
 header .center_menu{margin: 0 auto;}
 header .center_menu nav{align-content: center;}
 header .center_menu nav .gnb{display: flex;}
@@ -55,18 +65,23 @@ header .center_menu nav .gnb>li>a{
 }
 header .center_menu nav .gnb>li>a:hover{/* color: #CBA064; */}
 /* =============================서브메뉴 */
+header .center_menu nav .gnb>li:nth-child(4) .lnb_bg{display: none;}
+header .center_menu nav .gnb>li:nth-child(3) .lnb_bg{display: none;}
+header .center_menu nav .gnb>li:nth-child(2) .lnb_bg{}
+header .center_menu nav .gnb>li:nth-child(1) .lnb_bg{display: none;}
+
 header .center_menu nav .gnb>li .lnb_bg{
-    position: absolute; top:-100vh; left: 0;
+    position: absolute; top:50px; left: 0;
     transition: top 1.5s;
     z-index: -1;
-    width: 100%;
+    width: 100%; 
     padding: 40px 260px;
     background: #fff;
-    border-bottom: 3px solid #000; 
+    border-bottom: 3px solid #000;
 }
 header .center_menu nav .gnb>li .lnb_bg .allmenu{
-    padding: 10px 20px;
-    display: flex; flex-flow: row wrap;
+    padding: 10px 0px;
+    display: flex; flex-flow: row nowrap;
     margin-bottom: 15px;
 }
 header .center_menu nav .gnb>li .lnb_bg .allmenu a{
@@ -83,16 +98,17 @@ header .center_menu nav .gnb>li .lnb_bg .allmenu:hover a img{
     transform:rotate(90deg);
 }
 header .center_menu nav .gnb li .lnb_bg .category{
-    display: flex; flex-flow: row wrap;
-    justify-content:space-between;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1400px; min-width: 340px;
 }
 header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1{
-    display: flex; flex-flow: row wrap;
-    padding: 0 10px;
+    display: flex; flex-flow: row nowrap;
+    padding: 0 10px; width: 100%;
 }
 header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li{
-   width: 205px; margin-right: 40px;
+   width: 205px; margin: 0 auto;
 }
 header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a{
     display: flex; justify-content: space-between; 
@@ -102,7 +118,7 @@ header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p{
     font-size: 0.875rem; font-weight: 500; 
     align-content: center;
 }
-header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p:nth-child(2){width: 20px; height: 20px;}
+header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p:nth-child(2){width: 20px;}
 header .center_menu nav .gnb>li .lnb_bg .category .lnb_depth1>li>a p img{width: 100%;}
 header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2{
     padding: 30px 10px;
@@ -118,8 +134,14 @@ header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li 
 header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li a:hover{
     color: #CBA064;
 }
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg{display: flex;}/* 메뉴 속 광고 */
-header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{margin-right: 20px;}
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg{
+    display: flex;  width: max-content;
+    margin: 0 auto;
+    justify-content: center;
+}/* 메뉴 속 광고 */
+header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{
+    margin-right: 20px;
+}
 header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p{
     margin-bottom: 20px;font-size: 0.875rem;
     overflow: hidden;
@@ -130,6 +152,7 @@ header .center_menu nav .gnb li .lnb_bg .category .menu_bg a:hover p{
     color: #000;
 }
 header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img{
+    width: 100%;
     transform: scale(1);
     transition: transform 0.8s;
 }
@@ -151,3 +174,4 @@ header .right_menu{
 header .right_menu>a{margin-right: 20px;}
 header .right_menu>a:nth-child(2){}
 header .right_menu a img{}
+/*  */

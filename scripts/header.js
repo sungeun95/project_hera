@@ -4,6 +4,7 @@ const allMenu = document.querySelectorAll('.gnb > li > a');
 const lnbBg = document.querySelectorAll('.lnb_bg');
 
 
+/* 
 for(let i=0; i < allMenu.length; i++ ){
     allMenu[i].addEventListener('mouseover',function(){
         this.style = 'color:#CBA064';
@@ -24,4 +25,6 @@ for(let i=0; i < lnbBg.length; i++ ){
         allMenu[i].style = 'color:#000'
         this.style = 'top:-100vh';
     })
-}
+} 
+
+ */
