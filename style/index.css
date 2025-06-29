@@ -144,6 +144,7 @@ header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{
 }
 header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p{
     margin-bottom: 20px;font-size: 0.875rem;
+    margin: 0 5px;
     overflow: hidden;
     color: #555;
     transition: color 0.4s;
