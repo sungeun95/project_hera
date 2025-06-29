@@ -26,7 +26,7 @@
     /* 메뉴 =========================================================== 중앙 메뉴 */
     header .center_menu{margin: 50px 0;width: 100%;}
     header .center_menu nav .gnb{
-        background-color: palegreen;
+        background-color: #fff;
         flex-wrap: nowrap;
     }
     header .center_menu nav .gnb>li{   
@@ -41,56 +41,50 @@
         padding: 20px 5px;
     }
     header .center_menu nav .gnb>li .lnb_bg{
-        background-color: yellow;
-        width: 100%; top: 115px;
-        padding: 0;
+        top: 100px;
+        padding: 0 5px;
     }
     header .center_menu nav .gnb li .lnb_bg .category{
-        background-color: blue; /* 테스트용 색 */
         display: flex;
         flex-direction: column;
-        width: 100%;
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1{
         display: flex;
-        flex-direction: column;
-        width: 100%;  
+        width: 100%;
+        flex-direction: column; 
+        margin-bottom: 15px;
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li{
-         margin: 0 0;
+         padding: 10px 10px;
          width: 100%;
-         background-color: green;
          box-sizing: border-box;
          
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li>a{
-        border-bottom: 0px solid #D9D9D9; padding: 10px 5px;
+        border-bottom: 1px dotted #D9D9D9; 
+        padding: 0px 0px; white-space: normal;
         width: 100%;
-        background-color: goldenrod;
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li>a>p{
-        font-size: 0.5rem;
-        background-color: aquamarine;
-        
+        font-size: 0.5rem; 
     }
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg{
-        background-color: gold;
-        margin: 0 0;
+        
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2{
         display: flex;
-        flex-wrap: nowrap; /* 줄바꿈 허용 */
+        flex-wrap: nowrap;
         gap: 6px; /* 아이템 간 여백 */
         width: 100%;
+        padding: 10px 5px;
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li{
-        margin-bottom: 0;
+        margin-bottom: 0px;
     }
     header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li a{
         white-space: normal;/* ← 핵심: 줄바꿈 허용 */
         padding: 4px 6px;
         font-size: 0.5rem;
-        background-color: aqua;
         max-width: 100%;
     }
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg a:nth-child(2){
@@ -98,17 +92,17 @@
     }
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{margin-right: 0;}
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p:first-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* 이미지 자체 */
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+        display: block;
+        margin: 0 auto;
+       /*  max-width: 100%; */
+        height: auto;
     }
     header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img{
         width: 250px;
