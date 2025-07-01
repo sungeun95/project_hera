@@ -1,2 +1,151 @@
 /*main */
-.video{ width: 100vw; height: 100vh;}
+
+/* ======================================================1행 동영상 */
+main{position: relative; width: 100%; /* z-index: -1 */;}
+main .video{
+    position: relative; top: 0px;
+    width: 100%; height:calc(100vh - 50px);
+}
+main .video .swiper-wrapper{}
+main .video .swiper-wrapper .swiper-slide{}
+main .video .swiper-wrapper .swiper-slide video{
+    width: 100%; height: 100%;object-fit: cover;/* 백그라운드포지션과 비슷한 역활:검색 */
+}
+main .video .swiper-wrapper .swiper-slide p{
+    color: #fff;
+    position: absolute; bottom: 40px; right: 260px;
+    font-size: 0.75rem;
+}
+main .video .swiper-wrapper .slide1{}
+main .video .swiper-wrapper .slide2{}
+main .video .swiper-wrapper .slide3{}
+main .video .swiper-wrapper .slide4{}
+main .video .swiper-wrapper .slide5{}
+main .video .swiper-wrapper .slide5{}
+main .video .swiper-wrapper .slide1 video{}
+main .video .swiper-wrapper .slide2 video{}
+main .video .swiper-wrapper .slide3 video{}
+main .video .swiper-wrapper .slide4 video{}
+main .video .swiper-wrapper .slide5 video{}
+main .video .swiper-wrapper .swiper-scrollbar{
+    background-color: #fff;
+}
+
+.swiper-scrollbar-horizonta{
+    background: #fff;
+}
+
+/* ======================================================2행 베스트 상품 */
+
+main .best_seller{width: 100%; padding: 150px 0;}
+main .best_seller .best_container{
+    max-width: 1500px; min-width: 340px; margin: 0 auto;
+}
+main .best_seller .best_container .best_title{
+    padding: 0 70px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 1.875rem; font-weight: 700;
+    margin-bottom: 50px;
+} /* 2행 제목 */
+main .best_seller .best_container .best_title h1{}
+main .best_seller .best_container .best_title p{}
+main .best_seller .best_container .best_title p img{}
+main .best_seller .best_container .best_menu{
+    display: flex; padding: 0 50px;
+    width: 100%; 
+    margin-bottom: 50px;
+} /* 중간 메뉴 */
+main .best_seller .best_container .best_menu a{
+    display: block;  font-size: 0.75rem; /* font-size: 0.875rem; 마우스 올렸을때 */
+    width: 100%; padding: 10px;
+    border-bottom: 1px solid #C2C2C2;
+}
+main .best_seller .best_container .best_product_box{
+    width: 100%;  margin: 0 auto;
+
+} /* 상품 전체 묶음 */
+main .best_seller .best_container .best_product_box .best_product_top{
+    display: flex;
+    justify-content: space-between; align-items: center;
+    width: 100%; margin-bottom: 50px;
+} /* 상품 위 메인 */
+main .best_seller .best_container .best_product_box .best_product_top>a{} /* 화살표 */
+main .best_seller .best_container .best_product_box .best_product_top>a:nth-child(1){} /* 완쪽 화살표 */
+main .best_seller .best_container .best_product_box .best_product_top>a:nth-child(3){} /* 오른쪽 화살표 */
+main .best_seller .best_container .best_product_box .best_product_top>a img{width: 100%;}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main{
+    display: flex; width: 100%;
+    align-items: center;
+    margin: 0 20px;
+}/* 베스트 위 상품 */
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main{
+    max-width: 800px; margin-right: 40px;
+}/* 메인 이미지 */
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main img{width: 100%;}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text{
+    display: inline-block;
+    width: max-content; text-align: left;
+}/* 메인 내용 */
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text>a{}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text>a h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text>a p{
+    width: max-content;
+    margin-bottom: 15px;
+    font-size: 0.875rem;
+}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text>a p del{
+    color: #bbb; margin-right: 10px;
+}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text>a p em{
+    color: #6B3E00; font-size: 1rem; font-weight: 700;
+}
+main .best_seller .best_container .best_product_box .best_product_top .best_product_main .best_main_text .best_main_btn {
+    padding: 10px 30px;
+    border: 1px solid #333;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom{
+    display: flex; 
+    padding: 0 50px;
+}/* 메인 상품 아래 */
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product{
+    width: 100%; height: max-content; 
+    margin-right: 10px;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product:last-child{margin-right: 0;}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product>a{}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product>a img{margin-bottom: 10px;}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box{
+    height: 109px; width: 100%;/* 아래 상품 내용 */
+    position: relative;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box .product_box_t{
+    margin-bottom: 15px;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box>a:nth-child(2){
+    position: absolute; bottom: 0;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box .product_box_t>a p{
+    text-align: left;
+    font-size: 0.75rem;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box_t .best_product_ts>a{
+    display: block; font-weight: 700;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box>a{
+    display: block;
+    text-align: left;
+}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box>a del{color: #bbb;}/* 원가 */
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box>a em{color: #6B3E00; font-weight: 700;}/* 가격 */
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box .product_box_t .best_product_ts{
+    text-align: left; width: 100%;
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box_t .best_product_ts>a img{width: 100%;}
+main .best_seller .best_container .best_product_box .best_product_bottom .best_product .product_box_t{}
