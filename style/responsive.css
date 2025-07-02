@@ -21,7 +21,7 @@
     /* ===================================비디오 */
     main .video{height:735px;}
     /* ===================================베스트 상품 */
-    main .best_seller{width: 100%; padding: 80px 0;}
+    main .best_seller{width: 100%; padding: 40px 0;}
     main .container{width: 100%;}    
     main .title{font-size: 1.375rem;margin-bottom: 60px;}
     main .best_seller .container .best_product_box{ 
@@ -65,8 +65,25 @@
     main .category .category_name span{line-height: 400px; font-size: 1.125rem;}
     /* ===================================카테고리 끝 */
     /* ===================================신상품 */
-    main .title1::after{left: 20px;}
-
+    main .new_seller{padding: 80px 0;}
+    main .title1::after{width: 93%; left:50px;}
+    main .new_product_box .new_product_top .new_main01{margin-right: 20px;}
+    main .new_product_box .new_product_top .new_main .new_main_text_all{}
+    main .new_product_box .new_product_top .new_main .new_main_text_all>a{
+        font-size: 0.625rem; 
+    }
+    main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text{
+        margin-bottom: 0;
+    }
+    main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text a{font-size: 0.875rem;}
+    main .new_product_box .new_product_top .new_main a del{font-size: 0.75rem;}
+    main .new_product_box .new_product_top .new_main a em{font-size: 0.875rem;}
+    /* ===================================신상품 끝 */
+    /* ===================================서울레드 배너 */
+    main .banner{height: 300px;}
+    main .banner a p:nth-child(1){font-size: 1.375rem; margin-bottom: 30px;}
+    main .banner a p:nth-child(2){font-size: 0.75rem;}
+    /* ===================================서울레드 배너 끝 */
 }   /* 태블릿 끝 */
 
 @media screen and (max-width:959px){/* 모바일 */
@@ -227,7 +244,7 @@
     main .product_bottom .product>a{width: 100%;}
     main .product_bottom .product>a img{width: 100%;}
     main .product_bottom .product .product_box_t .product_ts>a{
-        font-size: 0.688rem; align-content: center;
+        font-size: 0.688rem; align-content: center; line-height: 130%;
     }
     main .product_bottom .product .product_box .product_box_t>a p{
         font-size: 0.6rem;
@@ -253,5 +270,28 @@
     }
     /* ===================================카테고리 끝 */
     /* ===================================신상품 */
+    main .new_seller{padding: 50px 0;}
     main .title1::after{width: 97%; left: 10px;}
+    main .new_product_box .new_bottom .arrow{display: none;}
+    main .new_product_box .new_product_top{padding: 0 10px;}
+    main .new_product_box .new_product_top .new_main01{margin-right: 0; margin-top: 40px;}
+    main .new_product_box .new_product_top .new_main .new_main_text_all{}
+    main .new_product_box .new_product_top .new_main .new_main_text_all>a{
+        font-size: 0.688rem;; 
+    }
+    main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text{
+        margin-bottom: 0;
+    }
+    main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text a{font-size: 0.7rem;}
+    main .new_product_box .new_product_top .new_main a del{font-size: 0.6rem;}
+    main .new_product_box .new_product_top .new_main a em{font-size: 0.7rem;}
+
+    main .new_product_box .new_product_top .new_main02{display: none;}
+    main .new_product_box .new_bottom{padding: 0px 10px;}
+    /* ===================================신상품 끝 */
+    /* ===================================서울레드 배너 */
+    main .banner{height: 150px;}
+    main .banner a p:nth-child(1){font-size: 1rem; margin-bottom: 10px;}
+    main .banner a p:nth-child(2){font-size: 0.7rem;}
+    /* ===================================서울레드 배너 끝 */
 }

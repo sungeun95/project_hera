@@ -47,7 +47,8 @@ main .title{
     justify-content: space-between;
     font-size: 1.875rem; font-weight: 700;
     margin-bottom: 50px;
-} /* 2행 제목 */
+} /* 제목 */
+main .title a:hover{transform: rotate(90deg);}
 main .best_seller .container .best_title h1{}
 main .best_seller .container .best_title p{}
 main .best_seller .container .best_title p img{}
@@ -59,7 +60,12 @@ main .best_seller .container .best_menu{
 main .best_seller .container .best_menu a{
     display: block;  font-size: 0.75rem; /* font-size: 0.875rem; 마우스 올렸을때 */
     width: 100%; padding: 10px;
+    color: #C2C2C2;
     border-bottom: 1px solid #C2C2C2;
+}
+main .best_seller .container .best_menu a:hover{
+    color: #CBA064; font-weight: 600; font-size: 0.76rem;
+    border-bottom: 1px solid #CBA064;
 }
 main .best_seller .container .best_product_box{
     width: 100%;  margin: 0 auto;
@@ -90,6 +96,7 @@ main .best_seller .container .best_product_box .best_product_top .best_product_m
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text>a{}
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text>a h2{
     font-weight: 700;
+    line-height: 150%;
     margin-bottom: 15px;
 }
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text>a p{
@@ -98,7 +105,7 @@ main .best_seller .container .best_product_box .best_product_top .best_product_m
     font-size: 0.875rem;
 }
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text>a p del{
-    color: #bbb; margin-right: 10px;
+    color: #bbb; margin-right: 10px;  margin-right: 15px;
 }
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text>a p em{
     color: #6B3E00; font-size: 1rem; font-weight: 700;
@@ -107,17 +114,26 @@ main .best_seller .container .best_product_box .best_product_top .best_product_m
     padding: 10px 30px;
     border: 1px solid #333;
 }
+main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text .best_main_btn:hover{
+    color: #CBA064;
+    border: 1px solid #CBA064;
+}
 main .product_bottom{
     display: flex; 
     padding: 0 50px;
+    max-width: 1500px; min-width: 320px;
 }/* 메인 상품 아래 */
 main .product_bottom .product{
     width: 100%; height: max-content; 
     margin-right: 10px;
+    transform: rotate(1);
 }
 main .product_bottom .product:last-child{margin-right: 0;}
-main .product_bottom .product>a{}
-main .product_bottom .product>a img{margin-bottom: 10px;}
+main .product_bottom .product>a{overflow: hidden; transform: rotate(1);}
+main .product_bottom .product:hover{
+    transform: rotate(1.1);
+}
+main .product_bottom .product>a img{margin-bottom: 10px; }
 main .product_bottom .product .product_box{
     height: 109px; width: 100%;/* 아래 상품 내용 */
     position: relative;
@@ -132,15 +148,15 @@ main .product_bottom .product .product_box .product_box_t>a p{
     text-align: left;
     font-size: 0.75rem;
 }
-main .product_bottom .product .product_box_t .best_product_ts>a{
+main .product_bottom .product .product_box_t .product_ts>a{
     display: block; font-weight: 700; text-align: left;
 }
 main .product_bottom .product .product_box>a{
     display: block;
     text-align: left;
 }
-main .product_bottom .product .product_box>a del{color: #bbb;}/* 원가 */
-main .product_bottom .product .product_box>a em{color: #6B3E00; font-weight: 700;}/* 가격 */
+main .product_bottom .product .product_box>a del{color: #bbb;margin-right: 15px;}/* 원가 */
+main .product_bottom .product .product_box>a em{color: #6B3E00; font-weight: 700; }/* 가격 */
 main .product_bottom .product .product_box .product_box_t .product_ts{
     text-align: left; width: 100%;
     display: flex; justify-content: space-between;
@@ -199,17 +215,54 @@ main .title1::after{
     position: absolute; bottom: -20px; left: 40px;
 }
 main .new_product_box{}
-main .new_product_box .new_product_top{}
-main .new_product_box .new_product_top .new_main{}
-main .new_product_box .new_product_top .new_main01{}
-main .new_product_box .new_product_top .new_main02{}
+main .new_product_box .new_product_top{
+    max-width: 1500px; min-width: 320px;
+    display: flex; padding: 0 50px;
+    justify-content: space-between;  
+}
+main .new_product_box .new_product_top .new_main{
+    text-align: left; margin-bottom: 40px;
+}
+main .new_product_box .new_product_top .new_main01{margin-right: 10px;}
+main .new_product_box .new_product_top .new_main02{margin-right: 0px;}
 main .new_product_box .new_product_top .new_main>a{}
-main .new_product_box .new_product_top .new_main>a img{}
-main .new_product_box .new_product_top .new_main .new_main_text_all{}
-main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text{}
-main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text a{}
+main .new_product_box .new_product_top .new_main>a img{width: 100%;}
+main .new_product_box .new_product_top .new_main .new_main_text_all{
+    text-align: left; margin: 10px 0 20px 0;
+}
+main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text{
+    text-align: left; display: flex; justify-content: space-between; padding: 0 5px; align-content: center;
+    margin-bottom: 10px;
+}
+main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text a{
+    font-weight: 600;
+}
 main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text a img{}
-main .new_product_box .new_product_top .new_main .new_main_text_all>a{}
+main .new_product_box .new_product_top .new_main .new_main_text_all>a{
+    font-size: 0.75rem; 
+}
 main .new_product_box .new_product_top .new_main a{}
-main .new_product_box .new_product_top .new_main a del{}
-main .new_product_box .new_product_top .new_main a em{background-color: aqua;}
+main .new_product_box .new_product_top .new_main a del{font-size: 0.75rem; color: #C2C2C2;margin-right: 15px;}
+main .new_product_box .new_product_top .new_main a em{font-size: 0.875rem; color: #6B3E00; font-weight: 700;}
+
+main .new_product_box .new_bottom{
+    padding: 0px 20px; 
+}
+main .new_product_box .new_bottom .product:nth-child(5){margin-right: 0;}
+main .new_product_box .new_bottom .arrow{
+    align-content: center;
+}
+/* ======================================================4행 신상품 끝*/
+/* ======================================================5행 서울레드 배너*/
+main .banner{
+    width: 100%; height: 500px;
+    background-image: url(../images/seoulred_banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%  100%;
+    align-content: center;
+}
+main .banner a{}
+main .banner a p{color: #fff; line-height: 150%;}
+main .banner a p:nth-child(1){font-size: 1.875rem; font-weight: 700;margin-bottom: 30px;}
+main .banner a p:nth-child(2){}
