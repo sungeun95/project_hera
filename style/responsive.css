@@ -118,6 +118,9 @@
     main .shop p:nth-child(2){font-size: 0.75rem; margin: 20px 0;}
     main .shop button{font-size: 0.75rem;}
     /* ===================================매장안내 끝*/
+    /* ===================================footer */
+    footer{width: 100%; padding: 50px 80px;}
+    /* ===================================footer 끝 */
 
     
 }   /* 태블릿 끝 */
@@ -230,12 +233,12 @@
         font-size: 0.375rem;
     }
     /* ===================================베스트 상품 */
-    main .best_seller{width: 100%; padding: 50px 0;}
+    main .best_seller{width: 100%; padding: 50px 0px;}
     main .container{width: 100%;}  
     main .best_seller .container .best_menu{padding: 0 5px; margin-bottom: 20px;}
     main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 0px;}
     main .best_seller .container .best_product_box{ 
-        padding: 0px;
+        padding: 0px 10px;
         
     }/* 메인 */
     main .best_seller .container .best_product_box .best_product_top{
@@ -306,6 +309,7 @@
     main .new_product_box .new_product_top{
         margin-right: 0; padding: 0 0;
     }
+    main .new_product_box .new_product_top .new_main{padding: 0 10px;}
     main .new_product_box .new_product_top .new_main01{
         margin-right: 0; margin-top: 40px; width: 100%;
     }
@@ -380,6 +384,22 @@
     main .shop p:nth-child(1){font-size: 1rem;}
     main .shop p:nth-child(2){font-size: 0.7rem; margin: 10px 0;}
     main .shop button{font-size: 0.7rem;}
-        /* ===================================매장안내 끝*/
-    
+    /* ===================================매장안내 끝*/
+    /* ===================================footer */
+    footer{width: 100%; padding: 30px 0px;}
+    footer .announcement{display: none;}
+    footer .footer_bottom{
+        display: block; width: 100%;
+    }
+    footer .footer_bottom address span{
+        font-size: 0.55rem; 
+        text-align: center; margin-bottom: 10px;
+    }
+    footer .footer_bottom .icon{
+        justify-content: center;
+    }
+    footer .footer_bottom .icon a{
+        margin-right: 5px;
+    }
+    /* ===================================footer 끝 */
 }

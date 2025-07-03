@@ -192,3 +192,41 @@ header .right_menu>a:nth-child(2){}
 header .right_menu a img{}
 /*  */
 
+/* ============================================================== footer */
+footer{
+    width: 100%; padding: 50px 260px;
+    background-color: #000;
+}
+footer .announcement{
+    display: flex; justify-content: space-between;
+    margin-bottom: 50px;
+}
+footer .announcement a{
+    display: block;
+    color: #333; font-size: 0.825rem; font-weight: 700;
+}
+footer .announcement a:hover{
+    font-size: 0.83rem;
+    color: #fff;
+}
+footer .footer_bottom{
+    display: flex; justify-content: space-between;
+    align-items: center;
+}
+footer .footer_bottom address{}
+footer .footer_bottom address span{
+    text-align: left;
+    display: block;
+    color: #fff; font-size: 0.825rem;
+}
+footer .footer_bottom address span:nth-child(1){margin-bottom: 10px;}
+footer .footer_bottom .icon{
+    display: flex;
+}
+footer .footer_bottom .icon a{
+    display: block;
+    width: 30px; height: 30px;
+    margin-right: 20px;
+}
+footer .footer_bottom .icon a:last-child{margin-right: 0;}
+footer .footer_bottom .icon a img{width: 100%;}

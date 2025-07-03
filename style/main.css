@@ -1,7 +1,7 @@
 /*main */
 
 /* ======================================================1행 동영상 */
-main{position: relative; width: 100%; /* z-index: -1 */;}
+main{position: relative; width: 100%; /* z-index: -1 */ }
 main .video{
     position: relative; top: 0px;
     width: 100%; height:calc(100vh - 50px);
