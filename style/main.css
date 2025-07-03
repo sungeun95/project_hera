@@ -45,9 +45,10 @@ main .title{
     padding: 0 70px;
     display: flex; flex-flow: row nowrap;
     justify-content: space-between;
-    font-size: 1.875rem; font-weight: 700;
+    font-size: 1.875rem;
     margin-bottom: 50px;
 } /* 제목 */
+main .title h2{ font-weight: 700;}
 main .title a:hover{transform: rotate(90deg);}
 main .best_seller .container .best_title h1{}
 main .best_seller .container .best_title p{}
@@ -146,7 +147,7 @@ main .product_bottom .product .product_box>a:nth-child(2){
 }
 main .product_bottom .product .product_box .product_box_t>a p{
     text-align: left;
-    font-size: 0.75rem;
+    font-size: 0.75rem; line-height: 150%;
 }
 main .product_bottom .product .product_box_t .product_ts>a{
     display: block; font-weight: 700; text-align: left;
@@ -209,7 +210,7 @@ main .category .lip span:nth-child(1){
 /* ======================================================3행 카탈로그 끝 */
 /* ======================================================4행 신상품*/
 main .new_seller{width: 100%; padding: 150px 0;}
-main .title1{position: relative;}
+main .title1{position: relative; margin-bottom: 80px;}
 main .title1::after{
     content: ""; width: 95%; border-bottom: 1px solid #C2C2C2;
     position: absolute; bottom: -20px; left: 40px;
@@ -266,3 +267,49 @@ main .banner a{}
 main .banner a p{color: #fff; line-height: 150%;}
 main .banner a p:nth-child(1){font-size: 1.875rem; font-weight: 700;margin-bottom: 30px;}
 main .banner a p:nth-child(2){}
+/* ======================================================5행 서울레드 끝*/
+/* ======================================================6행 추천상품*/
+main .recommended{width: 100%; padding: 150px 0 0 0;}
+main .recommended .recommended_box .recommended_product{
+    padding: 0 0px;
+}/* 상품 전체 묶음 */
+main .recommended .recommended_box .recommended_product .recommended_line01{} /* 1행 */
+main .recommended .recommended_box .recommended_product .recommended_line02{margin: 30px 0;} /* 2행 */
+main .recommended .recommended_box .recommended_product .recommended_line03{margin-bottom: 60px;} /* 3행 */
+main .recommended .recommended_box .recommended_btn{margin-bottom: 80px;}
+main .recommended .recommended_box .recommended_btn button{
+    font-size: 0.75rem; color: #C2C2C2;
+    margin: 0 10px;
+}
+main .recommended .recommended_box .recommended_btn button:hover{ 
+    color: #CBA064; font-size: 0.875rem; font-weight: 600;
+}
+/* ======================================================6행 추천상품 끝*/
+/* ======================================================7행 회사소개*/
+main .introduction{width: 100%; padding: 150px 0;}
+main .introduction .introduction_box{
+    max-width: 1400px; height: 500px;
+    display: flex; justify-content: space-between;
+    box-shadow: 1px 2px 4px 2px rgba(0, 0, 0, 0.25);
+}
+main .introduction .introduction_box .introduction_text{
+    width: 80%;  height: 100%;
+    position: relative;
+}
+main .introduction .introduction_box .introduction_text .introduction_text_t{
+    position: absolute;
+    width: 100%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+main .introduction .introduction_box .introduction_text .introduction_text_t h3{
+    font-size: 1.875rem; margin-bottom: 30px;
+} /* 제목 */
+main .introduction .introduction_box .introduction_text .introduction_text_t p{
+    max-width: 400px; min-width: 320px; margin: 20px  auto;
+    line-height: 150%; font-size: 0.875rem;
+}
+main .introduction .introduction_box .introduction_video{width: 100%;}
+main .introduction .introduction_box .introduction_video video{
+    width: 100%; height: 100%; object-fit: cover;/* 백그라운드포지션과 비슷한 역활:검색 */
+}

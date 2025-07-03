@@ -20,6 +20,7 @@
     }
     /* ===================================비디오 */
     main .video{height:735px;}
+    main .video .swiper-wrapper .swiper-slide p{right: 80px;}
     /* ===================================베스트 상품 */
     main .best_seller{width: 100%; padding: 40px 0;}
     main .container{width: 100%;}    
@@ -65,7 +66,7 @@
     main .category .category_name span{line-height: 400px; font-size: 1.125rem;}
     /* ===================================카테고리 끝 */
     /* ===================================신상품 */
-    main .new_seller{padding: 80px 0;}
+    main .new_seller{padding: 80px 10px;}
     main .title1::after{width: 93%; left:50px;}
     main .new_product_box .new_product_top .new_main01{margin-right: 20px;}
     main .new_product_box .new_product_top .new_main .new_main_text_all{}
@@ -84,6 +85,24 @@
     main .banner a p:nth-child(1){font-size: 1.375rem; margin-bottom: 30px;}
     main .banner a p:nth-child(2){font-size: 0.75rem;}
     /* ===================================서울레드 배너 끝 */
+    /* ===================================추천상품 */
+    main .recommended{width: 100%; padding: 80px 10px 0 10px;}
+    main .recommended .recommended_box .recommended_product{padding: 0 50px;}/* 상품 전체 묶음 */
+    main .recommended .recommended_box .recommended_product .recommended_line03{margin-bottom: 50px;}
+    main .recommended .recommended_box .recommended_btn{margin-bottom: 50px;}
+    main .recommended .recommended_box .recommended_product{
+        padding: 0 50px;
+    }/* 상품 전체 묶음 */
+    /* ===================================추천상품 끝*/
+    /* ===================================회사소개*/
+    main .introduction{width: 100%; padding: 80px 50px;}
+    main .introduction .introduction_box{height: 250px;}
+    main .introduction .introduction_box .introduction_text{width: 100%;}
+    main .introduction .introduction_box .introduction_text .introduction_text_t h3{font-size: 1.375rem;}
+    main .introduction .introduction_box .introduction_text .introduction_text_t p{font-size: 0.625rem;}
+    /* ===================================회사소개 끝*/
+
+    
 }   /* 태블릿 끝 */
 
 @media screen and (max-width:959px){/* 모바일 */
@@ -98,24 +117,19 @@
     /* 메뉴 =========================================================== 중앙 메뉴 */
     header .center_menu{margin: 50px 0;width: 100%;}
     header .center_menu nav .gnb{
-        background-color: #fff;
-        flex-wrap: nowrap;
-    }
+        background-color: #fff; flex-wrap: nowrap;}
     header .center_menu nav .gnb>li{   
-        margin: 0 5px;
-        width: 100%;
+        margin: 0 5px; width: 100%;
         align-content: center;
     }
     header .center_menu nav .gnb>li:nth-child(2){margin-right: 0;}
     header .center_menu nav .gnb>li>a{
-        line-height: 1.5;
-        font-size: 0.6rem;
+        line-height: 1.5; font-size: 0.6rem;
         padding: 20px 5px;
     }
     header .center_menu nav .gnb>li .lnb_bg{
         top: 100px;
         padding: 0 5px;
-
         opacity: 0;
         transform: translateY(-20px);
         transition: all 0.8s ease;
@@ -205,8 +219,7 @@
     main .best_seller .container .best_menu{padding: 0 10px; margin-bottom: 20px;}
     main .title{font-size: 1.375rem;margin-bottom: 40px; padding: 0 10px;}
     main .best_seller .container .best_product_box{ 
-        width: 100%;
-        padding: 0 10px;
+        padding: 10px;
         
     }/* 메인 */
     main .best_seller .container .best_product_box .best_product_top{
@@ -270,15 +283,20 @@
     }
     /* ===================================카테고리 끝 */
     /* ===================================신상품 */
-    main .new_seller{padding: 50px 0;}
+    main .new_seller{padding: 50px 10px;}
     main .title1::after{width: 97%; left: 10px;}
     main .new_product_box .new_bottom .arrow{display: none;}
-    main .new_product_box .new_product_top{padding: 0 10px;}
-    main .new_product_box .new_product_top .new_main01{margin-right: 0; margin-top: 40px;}
+    main .new_product_box .new_product_top{
+        margin-right: 0; padding: 0 10px;
+    }
+    main .new_product_box .new_product_top .new_main01{
+        margin-right: 0; margin-top: 40px; width: 100%;
+    }
     main .new_product_box .new_product_top .new_main .new_main_text_all{}
     main .new_product_box .new_product_top .new_main .new_main_text_all>a{
         font-size: 0.688rem;; 
     }
+    main .new_product_box .new_product_top .new_main .new_main_text_all>a img{width: 100%;}
     main .new_product_box .new_product_top .new_main .new_main_text_all .new_main_text{
         margin-bottom: 0;
     }
@@ -294,4 +312,29 @@
     main .banner a p:nth-child(1){font-size: 1rem; margin-bottom: 10px;}
     main .banner a p:nth-child(2){font-size: 0.7rem;}
     /* ===================================서울레드 배너 끝 */
+    /* ===================================추천상품 */
+    main .recommended{width: 100%; padding: 50px 10px 0 10px;}
+    main .recommended .recommended_box .recommended_product{ padding: 0 0px;}
+    main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 40px;}
+    main .recommended .recommended_box .recommended_product .recommended_line03{display: none;}
+    main .recommended .recommended_box .recommended_btn{}
+    main .recommended .recommended_box .recommended_btn button{margin: 0 5px; font-size: 0.7rem;}
+    main .recommended .recommended_box .recommended_btn button:hover{ 
+        font-size: 0.8rem;
+    }
+    /* ===================================추천상품 끝 */
+    /* ===================================회사소개 */
+    main .introduction{padding: 50px 10px;}
+    main .introduction .introduction_box{
+        width: 100%; height: 400px; flex-flow: column nowrap;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+    }
+    main .introduction .introduction_box .introduction_text .introduction_text_t h3{
+        font-size: 1rem; margin-bottom: 20px;
+    }
+    main .introduction .introduction_box .introduction_text .introduction_text_t p{
+        height: 50%;
+    }
+    main .introduction .introduction_box .introduction_video{height: 50%;}
+    /* ===================================회사소개 끝 */
 }
