@@ -236,7 +236,7 @@
     main .best_seller{width: 100%; padding: 50px 0px;}
     main .container{width: 100%;}  
     main .best_seller .container .best_menu{padding: 0 5px; margin-bottom: 20px;}
-    main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 0px;}
+    main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 10px;}
     main .best_seller .container .best_product_box{ 
         padding: 0px 10px;
         
@@ -336,6 +336,7 @@
     /* ===================================서울레드 배너 끝 */
     /* ===================================추천상품 */
     main .recommended{width: 100%; padding: 50px 0;}
+    main .recommended .recommended_box .title1{margin-bottom: 60px;}
     main .recommended .recommended_box .recommended_product{ padding: 0 10px;}
     main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 20px;}
     main .recommended .recommended_box .recommended_product .recommended_line03{display: none;}
