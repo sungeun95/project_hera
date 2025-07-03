@@ -39,7 +39,7 @@ main .video .swiper-wrapper .swiper-scrollbar{
 
 main .best_seller{width: 100%; padding: 150px 0;}
 main .container{
-    max-width: 1500px; min-width: 340px; margin: 0 auto;
+    max-width: 1500px; min-width: 320px; margin: 0 auto;
 }
 main .title{
     padding: 0 70px;
@@ -122,10 +122,10 @@ main .best_seller .container .best_product_box .best_product_top .best_product_m
 main .product_bottom{
     display: flex; 
     padding: 0 50px;
-    max-width: 1500px; min-width: 320px;
+    max-width: 1500px; min-width: 300px;
 }/* 메인 상품 아래 */
 main .product_bottom .product{
-    width: 100%; height: max-content; 
+    width: 100%;
     margin-right: 10px;
     transform: rotate(1);
 }
@@ -217,7 +217,7 @@ main .title1::after{
 }
 main .new_product_box{}
 main .new_product_box .new_product_top{
-    max-width: 1500px; min-width: 320px;
+    max-width: 1500px; min-width: 300px;
     display: flex; padding: 0 50px;
     justify-content: space-between;  
 }
@@ -306,10 +306,116 @@ main .introduction .introduction_box .introduction_text .introduction_text_t h3{
     font-size: 1.875rem; margin-bottom: 30px;
 } /* 제목 */
 main .introduction .introduction_box .introduction_text .introduction_text_t p{
-    max-width: 400px; min-width: 320px; margin: 20px  auto;
+    max-width: 400px; min-width: 300px; margin: 20px  auto;
     line-height: 150%; font-size: 0.875rem;
 }
 main .introduction .introduction_box .introduction_video{width: 100%;}
 main .introduction .introduction_box .introduction_video video{
     width: 100%; height: 100%; object-fit: cover;/* 백그라운드포지션과 비슷한 역활:검색 */
 }
+/* ======================================================7행 회사소개 끝*/
+/* ======================================================8행 일반 배너*/
+main .banner2{
+    width: 100%; height: 300px;
+    background: url(../images/banner.jpg) no-repeat fixed center / cover  ;
+}
+/* ======================================================8행 일반 배너 끝*/
+/* ======================================================9행 인스타그램*/
+main .instagram{width: 100%; padding: 150px 0;}
+main .instagram .instagram_box{
+    max-width: 1400px; height: 100%;
+    margin: 0 auto;
+}
+main .instagram .instagram_box .text{margin-bottom: 60px;}
+main .instagram .instagram_box .text h2{font-size: 1.875rem; margin-bottom: 20px;font-weight: 700;}
+main .instagram .instagram_box .text p{color: #555;}
+main .instagram .instagram_box .instagram_img{
+    width: 100%; height: 760px;
+    display: flex; justify-content: space-between;
+} /* 사진 전체 */
+main .instagram .instagram_box .instagram_img .row{
+    display: block;
+    width: calc((100% - 20px) / 3); height: 100%;
+    overflow: hidden;
+} /* 열 공통 */
+main .instagram .instagram_box .instagram_img .row a{
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    position: relative;
+
+} /* 열 공통 */
+main .instagram .instagram_box .instagram_img .row a span{
+    position: absolute; top: 0; left: 0;width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+} /* 열 공통 */
+main .instagram .instagram_box .instagram_img .row a:hover{
+    background-size: 110% 110%;
+}
+main .instagram .instagram_box .instagram_img .row a:hover span{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+main .instagram .instagram_box .instagram_img .row1{
+    
+} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row1 a{
+    height: calc((100% - 10px) / 2) ;width: 100%;
+} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row1 a:nth-child(1){
+    background-image: url(../images/instagram/Instagram_01.jpg);
+}
+main .instagram .instagram_box .instagram_img .row1 a:nth-child(2){
+    background-image: url(../images/instagram/Instagram_02.jpg);
+}
+main .instagram .instagram_box .instagram_img .row2{} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row2 a{
+    height: calc((100% - 20px) / 3) ;width: 100%;
+} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row2 a:nth-child(1){
+    background-image: url(../images/instagram/Instagram_03.jpg);
+}
+main .instagram .instagram_box .instagram_img .row2 a:nth-child(2){
+    background-image: url(../images/instagram/Instagram_04.jpg);
+}
+main .instagram .instagram_box .instagram_img .row2 a:nth-child(3){
+    background-image: url(../images/instagram/Instagram_05.jpg);
+}
+
+main .instagram .instagram_box .instagram_img .row3{} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row3 a{
+    height: calc((100% - 10px) / 2) ;width: 100%;
+} /* 열 개별 */
+main .instagram .instagram_box .instagram_img .row3 a:nth-child(1){
+    background-image: url(../images/instagram/Instagram_06.jpg);
+}
+main .instagram .instagram_box .instagram_img .row3 a:nth-child(2){
+    background-image: url(../images/instagram/Instagram_07.jpg);
+}
+main .instagram .instagram_box button{
+    padding: 10px 80px;
+    border: 1px solid #333;
+    margin-top: 50px;
+}
+/* ======================================================9행 인스타그램 끝*/
+/* ======================================================10행 매장안내*/
+main .shop{
+    width: 100%; height: 300px;
+    background-image: url(../images/store_information.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+}
+main .shop p{}
+main .shop p{color: #fff; line-height: 150%;}
+main .shop p:nth-child(1){font-size: 1.875rem; font-weight: 700;}
+main .shop p:nth-child(2){margin: 30px 0;}
+main .shop button{
+    padding: 10px 20px;
+    border: 1px solid #fff; color: #fff;
+}
+/* ======================================================10행 매장안내 끝*/
+

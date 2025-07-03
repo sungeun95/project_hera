@@ -45,7 +45,7 @@
     /* 메인 끝 */
     /* 하단 시작 */
     main .product_bottom{padding: 0 0;}
-    main .product_bottom .product>a{width: 195.5px;}
+    main .product_bottom .product>a{width: 100%;}
     main .product_bottom .product>a img{width: 100%;}
     main .product_bottom .product .product_box_t .product_ts>a{
         font-size: 0.688rem; align-content: center;
@@ -101,6 +101,23 @@
     main .introduction .introduction_box .introduction_text .introduction_text_t h3{font-size: 1.375rem;}
     main .introduction .introduction_box .introduction_text .introduction_text_t p{font-size: 0.625rem;}
     /* ===================================회사소개 끝*/
+    /* ===================================일반 배너*/
+    main .banner2{height: 200px;}
+    /* ===================================일반 배너 끝*/
+    /* ===================================인스타그램*/
+    main .instagram{width: 100%; padding: 80px 50px;}
+    main .instagram .instagram_box .instagram_img{height: 500px;}
+    main .instagram .instagram_box .text h2{font-size: 1.375rem; margin-bottom: 10px;}
+    main .instagram .instagram_box .text p{font-size: 0.875rem;}
+    main .instagram .instagram_box button{padding: 10px 60px;}
+    /* ===================================인스타그램 끝*/
+    /* ===================================매장안내*/
+    main .shop{}
+    main .shop p{}
+    main .shop p:nth-child(1){font-size: 1.375rem;}
+    main .shop p:nth-child(2){font-size: 0.75rem; margin: 20px 0;}
+    main .shop button{font-size: 0.75rem;}
+    /* ===================================매장안내 끝*/
 
     
 }   /* 태블릿 끝 */
@@ -214,12 +231,11 @@
     }
     /* ===================================베스트 상품 */
     main .best_seller{width: 100%; padding: 50px 0;}
-    
     main .container{width: 100%;}  
-    main .best_seller .container .best_menu{padding: 0 10px; margin-bottom: 20px;}
-    main .title{font-size: 1.375rem;margin-bottom: 40px; padding: 0 10px;}
+    main .best_seller .container .best_menu{padding: 0 5px; margin-bottom: 20px;}
+    main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 0px;}
     main .best_seller .container .best_product_box{ 
-        padding: 10px;
+        padding: 0px;
         
     }/* 메인 */
     main .best_seller .container .best_product_box .best_product_top{
@@ -248,10 +264,11 @@
     /* 메인 끝 */
     /* 하단 시작 */
     main .product_bottom{
-        padding: 0 0; display: grid; width: 100%;
+        padding: 0 0; 
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 10px;
+        gap: 5px;
     }
     main .product_bottom .product{}
     main .product_bottom .product>a{width: 100%;}
@@ -283,11 +300,11 @@
     }
     /* ===================================카테고리 끝 */
     /* ===================================신상품 */
-    main .new_seller{padding: 50px 10px;}
-    main .title1::after{width: 97%; left: 10px;}
+    main .new_seller{padding: 50px 0px;}
+    main .title1::after{width: 95%; left: 10px;}
     main .new_product_box .new_bottom .arrow{display: none;}
     main .new_product_box .new_product_top{
-        margin-right: 0; padding: 0 10px;
+        margin-right: 0; padding: 0 0;
     }
     main .new_product_box .new_product_top .new_main01{
         margin-right: 0; margin-top: 40px; width: 100%;
@@ -306,6 +323,7 @@
 
     main .new_product_box .new_product_top .new_main02{display: none;}
     main .new_product_box .new_bottom{padding: 0px 10px;}
+    
     /* ===================================신상품 끝 */
     /* ===================================서울레드 배너 */
     main .banner{height: 150px;}
@@ -313,21 +331,22 @@
     main .banner a p:nth-child(2){font-size: 0.7rem;}
     /* ===================================서울레드 배너 끝 */
     /* ===================================추천상품 */
-    main .recommended{width: 100%; padding: 50px 10px 0 10px;}
-    main .recommended .recommended_box .recommended_product{ padding: 0 0px;}
-    main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 40px;}
+    main .recommended{width: 100%; padding: 50px 0;}
+    main .recommended .recommended_box .recommended_product{ padding: 0 10px;}
+    main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 20px;}
     main .recommended .recommended_box .recommended_product .recommended_line03{display: none;}
-    main .recommended .recommended_box .recommended_btn{}
+    main .recommended .recommended_box .recommended_btn{margin-bottom: 30px;}
     main .recommended .recommended_box .recommended_btn button{margin: 0 5px; font-size: 0.7rem;}
     main .recommended .recommended_box .recommended_btn button:hover{ 
         font-size: 0.8rem;
     }
     /* ===================================추천상품 끝 */
     /* ===================================회사소개 */
-    main .introduction{padding: 50px 10px;}
+    main .introduction{width: 100%; padding: 30px 0px;}
     main .introduction .introduction_box{
+        
         width: 100%; height: 400px; flex-flow: column nowrap;
-        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.25);
+        border: 1px solid #D9D9D9;
     }
     main .introduction .introduction_box .introduction_text .introduction_text_t h3{
         font-size: 1rem; margin-bottom: 20px;
@@ -337,4 +356,30 @@
     }
     main .introduction .introduction_box .introduction_video{height: 50%;}
     /* ===================================회사소개 끝 */
+    /* ===================================일반 배너*/
+    main .banner2{height: 120px;}
+    /* ===================================일반 배너 끝*/
+    /* ===================================인스타그램*/
+    main .instagram{width: 100%; padding: 30px 0px;}
+    main .instagram .instagram_box .text h2{font-size: 1.375rem; margin-bottom: 5px;}
+    main .instagram .instagram_box .text p{font-size: 0.875rem;}
+    main .instagram .instagram_box .instagram_img{
+        height: 350px; padding: 0 10px;
+    }
+    main .instagram .instagram_box .instagram_img .row{width: calc((100% - 10px) / 3);}
+    main .instagram .instagram_box .instagram_img .row a{margin-bottom: 5px;}
+    main .instagram .instagram_box .instagram_img .row1 a{height: calc((100% - 5px) / 2) ;width: 100%;}
+    main .instagram .instagram_box .instagram_img .row2 a{height: calc((100% - 10px) / 3) ;width: 100%;}
+    main .instagram .instagram_box .instagram_img .row3 a{height: calc((100% - 5px) / 2) ;width: 100%;}
+    main .instagram .instagram_box .instagram_img .row a:last-child{margin-bottom: 0;}
+    main .instagram .instagram_box button{padding: 10px 30px; font-size: 0.625rem;}
+    /* ===================================인스타그램 끝*/
+    /* ===================================매장안내*/
+    main .shop{height: 200px;}
+    main .shop p{}
+    main .shop p:nth-child(1){font-size: 1rem;}
+    main .shop p:nth-child(2){font-size: 0.7rem; margin: 10px 0;}
+    main .shop button{font-size: 0.7rem;}
+        /* ===================================매장안내 끝*/
+    
 }
