@@ -256,19 +256,19 @@
     main .banner a p:nth-child(2){font-size: 0.7rem;}
     /* ===================================서울레드 배너 끝 */
     /* ===================================추천상품 */
-    main .recommended{width: 100%; padding: 50px 0;}
+    main .recommended{width: 100%; padding: 50px 0 0 0 ; }
     main .recommended .recommended_box .title1{margin-bottom: 60px;}
     main .recommended .recommended_box .recommended_product{ padding: 0 10px;}
     main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 10px;}
     main .recommended .recommended_box .recommended_product .recommended_line03{display: none;}
-    main .recommended .recommended_box .recommended_btn{margin-bottom: 10px;}
+    main .recommended .recommended_box .recommended_btn{padding: 30px 0 0 0;}
     main .recommended .recommended_box .recommended_btn button{margin: 0 5px; font-size: 0.7rem;}
     main .recommended .recommended_box .recommended_btn button:hover{ 
         font-size: 0.8rem;
     }
     /* ===================================추천상품 끝 */
     /* ===================================회사소개 */
-    main .introduction{width: 100%; padding: 30px 0px;}
+    main .introduction{width: 100%; padding: 30px 0px; }
     main .introduction .introduction_box{
         
         width: 100%; height: 400px; flex-flow: column nowrap;
