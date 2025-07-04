@@ -64,11 +64,11 @@ header nav .gnb>li>a{
 header nav .gnb>li>a:hover{color: #CBA064;}
 header nav .gnb>li:hover .lnb_bg{height:550px;}   /* ==========================마우스 */
 /* ==================  마우스 올렸을때 나오는 중메뉴 시작 */
-header nav .gnb>li .lnb_bg{
+header nav .gnb>li>.lnb_bg{
     position: absolute; top: 50px; left: 0; 
     width: 100%; height:0; overflow: hidden;
-    background-color: #fff;
-    border: 2px solid #000;
+    background-color: #F8F6F3;
+    /* border: 2px solid #000; */
     transition: height, 0.5s  ease;
 }
 header nav .gnb li .lnb_bg .menu_bg{
