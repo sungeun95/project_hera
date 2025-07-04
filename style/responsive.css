@@ -125,7 +125,7 @@
     
 }   /* 태블릿 끝 */
 
-@media screen and (max-width:959px){/* 모바일 */
+@media screen and (max-width:849px){/* 모바일 */
     html, body {max-width: 100vw;/* overflow-x: hidden; */}
     .bg1 a p{font-size: 0.5rem;}
     header{width: 100%;}
@@ -262,7 +262,7 @@
     main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text .best_main_btn{
         font-size: 0.7rem;
         display: block; margin: 0 auto;
-        margin-bottom: 30px;
+        margin-bottom: 0; 
     }
     /* 메인 끝 */
     /* 하단 시작 */
