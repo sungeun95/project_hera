@@ -27,3 +27,6 @@
 7. a 태그 클릭시 새로고침 방지 (인터넷 검색)
 * `<a href="#">` 를 ctrl + h 로 `<a href="javascript:return false;">`로 변경
 * 자바스크립트 설정 안할거면 a태그에 경로를 javascript:return false;로 하면 클릭해도 새로고침 안된다고함
+### 2025년 7월 4일
+1. 헤더 다시 만듬
+* 

@@ -397,7 +397,12 @@ main .instagram .instagram_box .instagram_img .row3 a:nth-child(2){
 main .instagram .instagram_box button{
     padding: 10px 80px;
     border: 1px solid #333;
+    color: #333;
     margin-top: 50px;
+}
+main .instagram .instagram_box button:hover{
+    border: 1px solid #CBA064;
+    color: #CBA064;
 }
 /* ======================================================9행 인스타그램 끝*/
 /* ======================================================10행 매장안내*/
@@ -416,6 +421,10 @@ main .shop p:nth-child(2){margin: 30px 0;}
 main .shop button{
     padding: 10px 20px;
     border: 1px solid #fff; color: #fff;
+}
+main .shop button:hover{
+    border: 1px solid #CBA064;
+    color: #CBA064;
 }
 /* ======================================================10행 매장안내 끝*/
 

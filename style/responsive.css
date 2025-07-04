@@ -1,23 +1,15 @@
 @media screen and (max-width:1399px){/* 태블릿 */
-    header .left_menu .search input[type=text]{display: none;}
-    header .center_menu nav .gnb>li .lnb_bg{
-        padding: 40px 80px;
-    }
-    header .center_menu nav .gnb>li .lnb_bg .allmenu{
-        margin-bottom: 5px;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category{
-        flex-flow: column wrap;
-        
-    }
-    
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{
-        margin: 0 auto;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li{
-        justify-content: space-between;
-        width: 100%;
-    }
+    header nav .gnb>li:hover .lnb_bg{height:800px;}
+    header nav .gnb li .lnb_bg{}
+    header .left .search_box .text_box[type=text]{display: none;}
+    header nav .gnb li .lnb_bg .menu_bg{padding: 40px 80px;}
+    header nav .gnb li .lnb_bg .menu_bg .all_moving{padding: 10px 20px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group{flex-flow: column nowrap;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{width: 100%; margin-bottom: 30px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics{padding: 10px 5px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics a{font-size: 0.75rem;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{font-size: 0.75rem;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad{width: 100%;}
     /* ===================================비디오 */
     main .video{height:735px;}
     main .video .swiper-wrapper .swiper-slide p{right: 80px;}
@@ -126,108 +118,35 @@
 }   /* 태블릿 끝 */
 
 @media screen and (max-width:799px){/* 모바일 */
-    html, body {max-width: 100vw;/* overflow-x: hidden; */}
-    .bg1 a p{font-size: 0.5rem;}
     header{width: 100%;}
-    header .left_menu{left: 10px; top: 15px;}
-    header .left_menu>a{display: none;}
-    header .left_menu .hamburger{display: block;}
-    header .left_menu .hamburger:hover samp{background-color:#CBA064;}
-    header .left_menu .search{display: none;}
-    /* 메뉴 =========================================================== 중앙 메뉴 */
-    header .center_menu{margin: 50px 0;width: 100%;}
-    header .center_menu nav .gnb{
-        background-color: #fff; flex-wrap: nowrap;}
-    header .center_menu nav .gnb>li{   
-        margin: 0 5px; width: 100%;
-        align-content: center;
+    header nav .gnb li .lnb_bg .menu_bg{padding: 20px 0px;}
+    header .left .location, header .right .cart{display: none;}
+    header .left .search_box{margin-top: 7px;}
+    header .left .hamburger{display: block; margin-top: 5px;} 
+    header nav .gnb{
+        position: absolute; top:50px; left: 0;
+        justify-content: space-around;
+        padding: 0 5px; 
+        background-color: #fff;}
+    header nav .gnb>li:hover .lnb_bg{height:650px;}
+    header nav .gnb>li{width: 600px; padding: 0 5px;}
+    header nav .gnb>li:nth-child(2){margin-right: 0px;} 
+    header nav .gnb>li>a{text-align: center;}
+    header nav .gnb li .lnb_bg .menu_bg{width: 100%;}
+    
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{
+        display: block; padding: 0 5px;
     }
-    header .center_menu nav .gnb>li:nth-child(2){margin-right: 0;}
-    header .center_menu nav .gnb>li>a{
-        line-height: 1.5; font-size: 0.6rem;
-        padding: 20px 5px;
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1>li{width: 100%;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2{display: flex;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{
+        margin-right: 5px; margin-top: 10px; padding: 5px 5px; font-size: 0.6rem; 
     }
-    header .center_menu nav .gnb>li .lnb_bg{
-        top: 100px;
-        padding: 0 5px;
-        opacity: 0;
-        transform: translateY(-20px);
-        transition: all 0.8s ease;
-        pointer-events: none;
-    }
-    header .center_menu nav .gnb>li .lnb_bg.active {
-        opacity: 1;
-        transform: translateY(0);
-        pointer-events: auto;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category{
-        display: flex;
-        flex-direction: column;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1{
-        display: flex;
-        width: 100%;
-        flex-direction: column; 
-        margin-bottom: 15px;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li{
-        padding: 10px 10px;
-        width: 100%;
-        box-sizing: border-box;
-        
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li>a{
-        border-bottom: 1px dotted #D9D9D9; 
-        padding: 0px 0px; white-space: normal;
-        width: 100%;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li>a>p{
-        font-size: 0.6rem; 
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg{
-        
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2{
-        display: flex;
-        flex-wrap: nowrap;
-        width: 100%;
-        padding: 10px 5px;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li{
-        margin-bottom: 0px;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .lnb_depth1>li .lnb_depth2>li a{
-        white-space: nowrap;/* ← 핵심: 줄바꿈 허용 */
-        padding: 4px 6px;
-        font-size: 0.6rem;
-        max-width: 100%;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a:nth-child(2){
-        display: none;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a{margin-right: 0;}
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p:first-child {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* 이미지 자체 */
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img {
-        display: block;
-        margin: 0 auto;
-       /*  max-width: 100%; */
-        height: auto;
-    }
-    header .center_menu nav .gnb li .lnb_bg .category .menu_bg a p img{
-        width: 250px;
-    }
-    /* ========================================= */
-    header .right_menu{right: 10px; top: 15px;}
-    header .right_menu>a{margin-right: 0px;}
-    header .right_menu>a:nth-child(2){display: none;}
+    header .right .my{margin-right: 0;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad .ad_lip{width: 70%; margin: 0 auto;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad .ad_cosmetics{display: none;}
     /* ===================================비디오 */
-    main .video{height:220px; width: 100%;}
+    main .video{height:220px; width: 100%; margin-top: 60px;}
     main .video .swiper-wrapper .swiper-slide p{
         bottom: 10px; right: 5px;
         font-size: 0.375rem;
@@ -338,9 +257,9 @@
     main .recommended{width: 100%; padding: 50px 0;}
     main .recommended .recommended_box .title1{margin-bottom: 60px;}
     main .recommended .recommended_box .recommended_product{ padding: 0 10px;}
-    main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 20px;}
+    main .recommended .recommended_box .recommended_product .recommended_line02{margin-bottom: 10px;}
     main .recommended .recommended_box .recommended_product .recommended_line03{display: none;}
-    main .recommended .recommended_box .recommended_btn{margin-bottom: 30px;}
+    main .recommended .recommended_box .recommended_btn{margin-bottom: 10px;}
     main .recommended .recommended_box .recommended_btn button{margin: 0 5px; font-size: 0.7rem;}
     main .recommended .recommended_box .recommended_btn button:hover{ 
         font-size: 0.8rem;
@@ -353,6 +272,7 @@
         width: 100%; height: 400px; flex-flow: column nowrap;
         border: 1px solid #D9D9D9;
     }
+    main .introduction .introduction_box .introduction_text .introduction_text_t {padding: 0 5px;}
     main .introduction .introduction_box .introduction_text .introduction_text_t h3{
         font-size: 1rem; margin-bottom: 20px;
     }
