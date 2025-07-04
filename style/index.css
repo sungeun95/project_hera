@@ -56,7 +56,7 @@ header .left_menu .search a{margin-right: 5px; align-content: center; width: 20p
 header .left_menu .search a img{width: 100%;}
 header .left_menu .search input[type=text]{width: 100%; border-bottom: 1px solid #D9D9D9;}
 /* 메뉴 =========================================================== 중앙 메뉴 */
-
+header nav{background-color: aqua;}
 header .center_menu{
     margin: 0 auto;    
 }
@@ -194,10 +194,11 @@ header .right_menu a img{}
 
 /* ============================================================== footer */
 footer{
-    width: 100%; padding: 50px 260px;
+    width: 100%; padding: 80px 0px;
     background-color: #000;
 }
 footer .announcement{
+    max-width: 1500px; min-width: 320px; margin: 0 auto; padding: 0 50px;
     display: flex; justify-content: space-between;
     margin-bottom: 50px;
 }
@@ -210,6 +211,7 @@ footer .announcement a:hover{
     color: #fff;
 }
 footer .footer_bottom{
+    max-width: 1500px; min-width: 320px; margin: 0 auto; padding: 0 50px;
     display: flex; justify-content: space-between;
     align-items: center;
 }

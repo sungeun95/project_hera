@@ -3,7 +3,7 @@ const allMenu = document.querySelectorAll('.gnb > li > a');
 //const lnbBg = document.querySelector('.lnb_bg');
 const lnbBg = document.querySelectorAll('.lnb_bg');
 
-
+/* 
 document.addEventListener("mouseover", function () {
   const gnbItems = document.querySelectorAll(".gnb > li");
 
@@ -30,8 +30,9 @@ document.addEventListener("mouseover", function () {
           e.preventDefault(); // 링크 이동 방지
           lnbBg.classList.toggle("active"); // show/hide toggle
         }
-      }); */
+      }); 
     }
   });
 });
 
+ */

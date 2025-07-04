@@ -388,9 +388,9 @@
     /* ===================================매장안내 끝*/
     /* ===================================footer */
     footer{width: 100%; padding: 30px 0px;}
-    footer .announcement{display: none;}
+    footer .announcement{display: none; padding: 0 30px;}
     footer .footer_bottom{
-        display: block; width: 100%;
+        display: block; width: 100%; padding: 0 30px;
     }
     footer .footer_bottom address span{
         font-size: 0.55rem; 
