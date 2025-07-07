@@ -16,7 +16,7 @@
     /* ===================================베스트 상품 */
     main .best_seller{width: 100%; padding: 40px 0;}
     main .container{width: 100%;}    
-    main .title{font-size: 1.375rem;margin-bottom: 60px;}
+    main .title{font-size: 1.375rem;margin-bottom: 60px; padding: 0 50px;}
     main .best_seller .container .best_product_box{ 
         width: 100%;
         padding: 0 50px;
@@ -161,7 +161,7 @@
     main .best_seller .container .best_menu{padding: 0 5px; margin-bottom: 20px;}
     main .best_seller .container .best_menu a{font-size: 0.6rem;}
     main .best_seller .container .best_menu a:hover{font-size: 0.61rem;}
-    main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 10px;}
+    main .title{font-size: 1.275rem;margin-bottom: 40px; padding: 0 20px;}
     main .best_seller .container .best_product_box{ 
         padding: 0px 10px;
         
@@ -272,7 +272,7 @@
     }
     /* ===================================추천상품 끝 */
     /* ===================================회사소개 */
-    main .introduction{width: 100%; padding: 30px 0px; }
+    main .introduction{width: 100%; padding: 50px 0px; }
     main .introduction .introduction_box{
         
         width: 100%; height: 400px; flex-flow: column nowrap;
@@ -291,7 +291,7 @@
     main .banner2{height: 120px;}
     /* ===================================일반 배너 끝*/
     /* ===================================인스타그램*/
-    main .instagram{width: 100%; padding: 30px 0px;}
+    main .instagram{width: 100%; padding: 50px 0px;}
     main .instagram .instagram_box .text h2{font-size: 1.375rem; margin-bottom: 5px;}
     main .instagram .instagram_box .text p{font-size: 0.875rem;}
     main .instagram .instagram_box .instagram_img{
