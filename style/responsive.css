@@ -200,7 +200,7 @@
     }
     main .product_bottom .product{}
     main .product_bottom .product>a{width: 100%;}
-    main .product_bottom .product>a img{width: 100%;}
+    main .product_bottom .product>a img{width: 100%;margin-bottom: 5px;}
     main .product_bottom .product .product_box_t .product_ts>a{
         font-size: 0.688rem; align-content: center; line-height: 130%;
     }
