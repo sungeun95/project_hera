@@ -49,6 +49,8 @@ main .title{
     margin-bottom: 50px;
 } /* 제목 */
 main .title h2{ font-weight: 700;}
+main .title a{transform-origin: 30%;transform-origin: 50% 60%;}
+main .title>a>img{width: 100%;}
 main .title a:hover{transform: rotate(90deg);}
 main .best_seller .container .best_title h1{}
 main .best_seller .container .best_title p{}
@@ -112,7 +114,7 @@ main .best_seller .container .best_product_box .best_product_top .best_product_m
     color: #6B3E00; font-size: 1rem; font-weight: 700;
 }
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text .best_main_btn {
-    padding: 10px 30px;
+    padding: 10px 30px; font-size: 0.875rem;
     border: 1px solid #333;
 }
 main .best_seller .container .best_product_box .best_product_top .best_product_main .best_main_text .best_main_btn:hover{
@@ -126,15 +128,15 @@ main .product_bottom{
 }/* 메인 상품 아래 */
 main .product_bottom .product{
     width: 100%;
-    margin-right: 10px;
+    margin-right: 10px; 
 }
 main .product_bottom .product:last-child{margin-right: 0;}
-main .product_bottom .product>a{overflow: hidden; margin-bottom: 10px;}
-main .product_bottom .product>a>img{width: 100%;}
+main .product_bottom .product>a{overflow: hidden; margin-bottom: 5px;}
+main .product_bottom .product>a>img{width: 100%; margin-bottom: 5px;}
 main .product_bottom .product>a:hover>img{}
 main .product_bottom .product .product_box{
     height: 109px; width: 100%;/* 아래 상품 내용 */
-    position: relative;
+    position: relative; padding: 0 2px;
 }
 main .product_bottom .product .product_box .product_box_t{
     margin-bottom: 15px;
@@ -261,8 +263,9 @@ main .banner{
     background-size: 100%  100%;
     align-content: center;
 }
-main .banner a{}
-main .banner a p{color: #fff; line-height: 150%;}
+main .banner a{display: block; width: 100%; height: 100%; align-content: center; background-color: rgba(0, 0, 0, 0.2);}
+main .banner a:hover{ background-color: rgba(0, 0, 0, 0);}
+main .banner a p{color: #fff; line-height: 150%; }
 main .banner a p:nth-child(1){font-size: 1.875rem; font-weight: 700;margin-bottom: 30px;}
 main .banner a p:nth-child(2){}
 /* ======================================================5행 서울레드 끝*/
@@ -280,7 +283,7 @@ main .recommended .recommended_box .recommended_btn button{
     margin: 0 10px;
 }
 main .recommended .recommended_box .recommended_btn button:hover{ 
-    color: #CBA064; font-size: 0.875rem; font-weight: 600;
+    color: #CBA064; font-size: 0.76rem; font-weight: 600;
 }
 /* ======================================================6행 추천상품 끝*/
 /* ======================================================7행 회사소개*/
