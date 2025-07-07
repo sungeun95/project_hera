@@ -1,15 +1,15 @@
 @media screen and (max-width:1399px){/* 태블릿 */
-    header nav .gnb>li:hover .lnb_bg{height:800px;}
+    header nav .gnb>li:hover .lnb_bg{height:700px;}
     header nav .gnb li .lnb_bg{}
     header .left .search_box .text_box[type=text]{display: none;}
     header nav .gnb li .lnb_bg .menu_bg{padding: 40px 80px;}
     header nav .gnb li .lnb_bg .menu_bg .all_moving{padding: 10px 20px;}
     header nav .gnb li .lnb_bg .menu_bg .menu_group{flex-flow: column nowrap;}
-    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{width: 100%; margin-bottom: 30px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{width: 100%; margin-bottom: 20px;}
     header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics{padding: 10px 5px;}
-    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics a{font-size: 0.75rem;}
-    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{font-size: 0.75rem;}
-    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad{width: 100%;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics a{font-size: 0.75rem; }
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{font-size: 0.75rem; padding: 15px 10px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad{width: 85%; margin: 0 auto;}
     /* ===================================비디오 */
     main .video{height:735px;}
     main .video .swiper-wrapper .swiper-slide p{right: 80px;}
@@ -131,9 +131,9 @@
         /* padding: 10px 5px;  */
         border-top: 1px solid #ddd;
         background-color: #fff;}
-    
-    header nav .gnb>li:hover .lnb_bg{height:650px;}
-    header nav .gnb>li{width: 600px; padding: 0 5px;}
+    header nav .gnb>li>.lnb_bg{top: 49px;}
+    header nav .gnb>li:hover .lnb_bg{height:670px;}
+    header nav .gnb>li{width: 600px; padding: 0 0px;}
     header nav .gnb>li:nth-child(2){margin-right: 0px;} 
     header nav .gnb>li>a{text-align: center;}
     header nav .gnb li .lnb_bg .menu_bg{width: 100%;}

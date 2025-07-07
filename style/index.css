@@ -67,9 +67,10 @@ header nav .gnb>li:hover .lnb_bg{height:550px;}   /* ==========================�
 header nav .gnb>li>.lnb_bg{
     position: absolute; top: 50px; left: 0; 
     width: 100%; height:0; overflow: hidden;
-    background-color: #F8F6F3;
+    background-color: #fff;
     /* border: 2px solid #000; */
     transition: height, 0.5s  ease;
+    border-bottom: 2px solid #000;
 }
 header nav .gnb li .lnb_bg .menu_bg{
     max-width: 1400px; min-width: 320px; margin: 0 auto;padding: 80px 0;
@@ -104,7 +105,7 @@ header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics{
     border-bottom: 1px solid #D9D9D9; font-weight: 600;
 } /* 소메뉴 대표분류묶음 */
 header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics a{
-    display: block; font-size: 0.875rem; 
+    display: block; font-size: 0.875rem; font-weight: 600;
 } /* 소메뉴 대표이름 */
 header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics .arrow_r{display: block;} /* 화살표 */
 header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2{
