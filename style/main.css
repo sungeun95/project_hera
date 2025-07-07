@@ -127,14 +127,11 @@ main .product_bottom{
 main .product_bottom .product{
     width: 100%;
     margin-right: 10px;
-    transform: rotate(1);
 }
 main .product_bottom .product:last-child{margin-right: 0;}
-main .product_bottom .product>a{overflow: hidden; transform: rotate(1);}
-main .product_bottom .product:hover{
-    transform: rotate(1.1);
-}
-main .product_bottom .product>a img{margin-bottom: 10px; }
+main .product_bottom .product>a{overflow: hidden; margin-bottom: 10px;}
+main .product_bottom .product>a>img{width: 100%;}
+main .product_bottom .product>a:hover>img{}
 main .product_bottom .product .product_box{
     height: 109px; width: 100%;/* 아래 상품 내용 */
     position: relative;
@@ -152,6 +149,7 @@ main .product_bottom .product .product_box .product_box_t>a p{
 main .product_bottom .product .product_box_t .product_ts>a{
     display: block; font-weight: 700; text-align: left;
 }
+main .product_bottom .product .product_box{margin-bottom: 10px;}
 main .product_bottom .product .product_box>a{
     display: block;
     text-align: left;
