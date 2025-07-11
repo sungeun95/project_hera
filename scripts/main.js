@@ -7,3 +7,10 @@ const bestSwiper = new Swiper('.video',{
         el: ".video-scroll",
     },
 })
+
+const aAll = document.querySelectorAll('a');
+for(let i of aAll){
+    i.addEventListener('click',function(e){
+        e.preventDefault();
+    })
+}
