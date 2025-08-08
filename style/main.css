@@ -4,7 +4,7 @@
 main{position: relative; width: 100%; /* z-index: -1 */ }
 main .video{
     position: relative; top: 0px;
-    width: 100%; height:calc(100vh - 50px);
+    width: 100%; height:calc(100vh - 150px);
 }
 main .video .swiper-wrapper{}
 main .video .swiper-wrapper .swiper-slide{}
@@ -310,7 +310,7 @@ main .introduction .introduction_box .introduction_text .introduction_text_t{
     transform: translate(-50%, -50%);
 }
 main .introduction .introduction_box .introduction_text .introduction_text_t h3{
-    font-size: 1.875rem; margin-bottom: 30px;
+    font-size: 1.875rem; margin-bottom: 30px; font-weight: 600;
 } /* 제목 */
 main .introduction .introduction_box .introduction_text .introduction_text_t p{
     max-width: 400px; min-width: 300px; margin: 20px  auto;
