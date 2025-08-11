@@ -1,0 +1,42 @@
+main.login{}
+.login_bg{
+    width: 100%; height: 400px;
+    background-image: url(../images/login_page/login_main.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.login_bg p{}
+.login_bg h2{}
+.login_container{}
+.login_container .post{}
+.login_container .post .id{}
+.login_container .post .id[type=text]{}
+.login_container .post .pw{}
+.login_container .post .id[type=number]{}
+.login_container .post .id_setting{}
+.login_container .post .id_setting label{}
+/* ================ 나중에 참고하기=============== */
+.login_container .post .bt{}
+.login_container .keyboard{}
+.login_container .keyboard>p{} /*키보드이미지 */
+.login_container .easy{}
+.login_container .easy h3{}
+.login_container .easy .icon{}/* 공통 */
+.login_container .easy .icon .iconimg{}/* 공통 */
+.login_container .easy .icon>p:nth-child(2){}/* 공통 */
+.login_container .easy .kakao{}
+.login_container .easy .kakao .iconimg{}
+.login_container .easy .never{}
+.login_container .easy .never .iconimg{}
+.login_container .easy .apple{}
+.login_container .easy .apple .iconimg{}
+.login_container .Join{}
+.login_container .Join>span{}
+.login_container .Join>span:nth-child(1){}
+.login_container .Join>span:nth-child(2){}
+.login_container .Join>span>em{}
+.login_container .Join>span>em:nth-child(2){}
+.login_container .Join>span>em:nth-child(2)>img{}
+.login_container .bg{}
+.login_container .bg>a{}
+
