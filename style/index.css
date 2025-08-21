@@ -199,3 +199,71 @@ footer .footer_bottom .icon a{
 }
 footer .footer_bottom .icon a:last-child{margin-right: 0;}
 footer .footer_bottom .icon a img{width: 100%;}
+
+
+@media screen and (max-width:1399px){
+     header nav .gnb>li:hover .lnb_bg{height:700px;}
+    header nav .gnb li .lnb_bg{}
+    header .left .search_box .text_box[type=text]{display: none;}
+    header nav .gnb li .lnb_bg .menu_bg{padding: 40px 80px;}
+    header nav .gnb li .lnb_bg .menu_bg .all_moving{padding: 10px 20px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group{flex-flow: column nowrap;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{width: 100%; margin-bottom: 20px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics{padding: 10px 5px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .cosmetics a{font-size: 0.75rem; }
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{font-size: 0.75rem; padding: 15px 10px;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad{width: 85%; margin: 0 auto;}
+    /* ===================================footer */
+    footer{width: 100%; padding: 50px 80px;border: 1px solid;}
+    /* ===================================footer 끝 */ 
+}
+
+@media screen and (max-width:799px){
+    header{width: 100%;}
+    header nav{width: 100%;}
+    header nav .gnb li .lnb_bg .menu_bg{padding: 20px 0px;}
+    header .left .location, header .right .cart{display: none;}
+    header .left .search_box{margin-top: 7px;}
+    header .left .hamburger{display: block; margin-top: 5px;} 
+    header nav .gnb{
+        position: absolute; top:50px; left: 0;
+        justify-content: space-around;
+        /* padding: 10px 5px;  */
+        border-top: 1px solid #ddd;
+        background-color: #fff;}
+    header nav .gnb>li>.lnb_bg{top: 49px;}
+    header nav .gnb>li:hover .lnb_bg{height:670px;}
+    header nav .gnb>li{width: 600px; padding: 0 0px;}
+    header nav .gnb>li:nth-child(2){margin-right: 0px;} 
+    header nav .gnb>li>a{text-align: center;}
+    header nav .gnb li .lnb_bg .menu_bg{width: 100%;}
+    header nav .gnb li .lnb_bg .menu_bg .all_moving{}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1{
+        display: block; padding: 0 5px;
+    }
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1>li{width: 100%;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2{display: flex;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .lnb_depth1 li .lnb_depth2 li a{
+        margin-right: 5px; margin-top: 10px; padding: 5px 5px; font-size: 0.6rem; 
+    }
+    header .right .my{margin-right: 0;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad .ad_lip{width: 70%; margin: 0 auto;}
+    header nav .gnb li .lnb_bg .menu_bg .menu_group .menu_ad .ad_cosmetics{display: none;}
+        /* ===================================footer */
+    footer{width: 100%; padding: 30px 0px;}
+    footer .announcement{display: none; padding: 0 30px;}
+    footer .footer_bottom{
+        display: block; width: 100%; padding: 0 30px;
+    }
+    footer .footer_bottom address span{
+        font-size: 0.55rem; 
+        text-align: center; margin-bottom: 10px;
+    }
+    footer .footer_bottom .icon{
+        justify-content: center;
+    }
+    footer .footer_bottom .icon a{
+        margin-right: 5px;
+    }
+    /* ===================================footer 끝 */
+}
